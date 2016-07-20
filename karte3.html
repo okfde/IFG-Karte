@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+    #legende {
+        margin-top:10px;
+        margin-left:460px;
+    }
+    .info {
+        display: none
+    }
+    .info_container {
+        width: 400px;
+        padding: 1px;
+        float: left;
+    }
+    .good {
+        color: #00aa00;
+    }
+    .soso {
+        color: #A7A72D;
+    }
+    .bad {
+        color: #880000;
+    }
+    </style>
+    <title>Informationsfreiheit in Deutschland</title>
+</head>
+<body>
+    <h1>Informationsfreiheit in Deutschland</h1>
+    <div class="col-md-4">
+        <div class="info" id="Baden_Württemberg_info">
+            <h2>Baden Württemberg</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz</li>
+					<li class="bad">Hochschulen</li>
+					<li class="bad">Industrie- und Handelskammern</li>
+					<li class="bad">Landesbank und Sparkassen</li>
+					<li class="bad">Staatliche Stiftungen</li>
+					<li class="bad">sonstige Anstalten des öffentlichen Rechts</li>
+					<li class="bad">Gerichte (teilweise)</li>
+					<li class="bad">Rundfunk (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Landtag (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Rechnungshof (Prüfungstätigkeit ausgenommen)</li>
+				</ul>
+        </div>
+        <div class="info" id="Berlin_info">
+            <h2>Berlin</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Gerichte (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">staatlich kontrollierte Unternehmen sind nur im Bereich der Daseinsfürsorge anfragbar</li>
+				</ul>
+        </div>
+        <div class="info" id="Brandenburg_info">
+            <h2>Brandenburg</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz</li>
+					<li class="bad">Landtag (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Rechnungshof (nur im Bereich der Verwaltung anfragbar)</li>
+				</ul>
+        </div>
+        <div class="info" id="Bremen_info">
+            <h2>Bremen</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz</li>
+					<li class="bad">Rundfunk (im Bereich der journalistisch-redaktionellen Arbeit)</li>
+				</ul>
+        </div>
+        <div class="info" id="Hamburg_info">
+            <h2>Hamburg</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz</li>
+					<li class="bad">Rechnungshof</li>
+					<li class="bad">Hochschulen (im Bereich der Forschung, Lehre und Prüfungstätigkeit)</li>
+					<li class="bad">Handelskammer (derzeit in gerichtlicher Klärung)</li>
+					<li class="bad">staatlich kontrollierte Unternehmen (nur teilweise)</li>
+					<li class="bad">Rundfunk (im Bereich der journalistisch-redaktionellen Arbeit)</li>
+					<li class="bad">Bürgerschaft (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Gerichte (nur im Bereich der Verwaltung anfragbar)</li>
+				</ul>
+        </div>
+        <div class="info" id="Mecklenburg-Vorpommern_info">
+            <h2>Mecklenburg-Vorpommern</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Landtag (nur Verwaltung anfragbar)</li>
+					<li class="bad">Rechnunghof (wenn er in richterlicher Unabhängigkeit tätig wird)</li>
+					<li class="bad">Gerichte (wenn sie in richterlicher Unabhängigkeit tätig werden)</li>
+				</ul>
+        </div>
+        <div class="info" id="Nordrhein-Westfalen_info">
+            <h2>Nordrhein-Westfalen</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz (teilweise)</li>
+					<li class="bad">Kommunen (teilweise)</li>
+					<li class="bad">Hochschulen (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Landtag (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Rechnunghof (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Gerichte (nur im Bereich der Verwaltung anfragbar)</li>
+				</ul>
+        </div>
+        <div class="info" id="Rheinland-Pfalz_info">
+            <h2>Rheinland-Pfalz</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz</li>
+					<li class="bad">Hochschulen (bis auf Angaben zu Drittmitteln)</li>
+					<li class="bad">Industrie- und Handelskammern</li>
+					<li class="bad">Rundfunk (im Bereich der journalistisch-redaktionellen Arbeit)</li>
+					<li class="bad">Landtag (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Rechnunghof (nur anfragbar nach Abschluss der Verfahren)</li>
+					<li class="bad">Gerichte (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Staatliche Stiftungen</li>
+					<li class="bad">sonstige Anstalten des öffentlichen Rechts</li>
+				</ul>
+        </div>
+        <div class="info" id="Saarland_info">
+            <h2>Saarland</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz</li>
+					<li class="bad">Hochschulen (im Bereich Forschung, Lehre und Prüfungstätigkeit)</li>
+					<li class="bad">Rundfunk (nur im Bereich der Verwaltung anfragbar)</li>
+					<li class="bad">Staatliche Stiftungen</li>
+					<li class="bad">Sonstige Anstalten des öffentlichen Rechts</li>
+				</ul>
+        </div>
+        <div class="info" id="Sachsen-Anhalt_info">
+            <h2>Sachsen-Anhalt</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz</li>
+					<li class="bad">Hochschulen (wissenschaftliche Tätigkeit)</li>
+					<li class="bad">Industrie- und Handelskammern</li>
+					<li class="bad">Rundfunk (teilweise)</li>
+					<li class="bad">Staatliche Stiftungen</li>
+					<li class="bad">Sonstige Anstalten des öffentlichen Rechts</li>
+					<li class="bad">staatlich kontrollierte Unternehmen</li>
+				</ul>
+        </div>
+        <div class="info" id="Schleswig-Holstein_info">
+            <h2>Schleswig-Holstein</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Landtag (im Bereich Gesetzgebung)</li>
+					<li class="bad">Rechnungshof (soweit er in richterlicher Unabhängigkeit tätig wird)</li>
+					<li class="bad">Gerichte (im Bereich der Rechtspflege)</li>
+				</ul>
+        </div>
+        <div class="info" id="Thueringen_info">
+			<h2>Thüringen</h2>
+				Folgende Stellen sind von der Auskunftspflicht ausgenommen:
+				<ul>
+					<li class="bad">Verfassungsschutz</li>
+					<li class="bad">Hochschulen (im Bereich Forschung und Lehre)</li>
+					<li class="bad">Rundfunk</li>
+					<li class="bad">Landtag (bei parlamentarischen Angelegenheiten)</li>
+					<li class="bad">Rechnungshof</li>
+					<li class="bad">Gerichte (bei Verfahrensakten)</li>
+					<li class="bad">Staatliche Stiftungen</li>
+					<li class="bad">Sonstige Anstalten des öffentlichen Rechts</li>
+				</ul>
+        </div>
+        <div class="info" id="Sachsen_info">
+            <h2>Sachsen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+				</ul>
+        </div>
+        <div class="info" id="Niedersachsen_info">
+            <h2>Niedersachsen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+				</ul>
+        </div>
+        <div class="info" id="Hessen_info">
+            <h2>Hessen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+				</ul>
+        </div>
+        <div class="info" id="Bayern_info">
+            <h2>Bayern</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+				</ul>
+        </div>
+    </div>
+<div class="col-md-6">
+    <ul class="nav nav-tabs">
+      <li><a href="karte1.html">Überblick</a></li>
+      <li><a href="karte2.html">Gebühren</a></li>
+      <li class="active"><a href="karte3.html">Bereichsausnahmen</a></li>
+</ul>
+<br>
+    <object data="karte3.svg"></object> 
+    <script>
+    $(window).load(function() {
+        var svg = $("object").get(0).contentDocument;
+        $(svg).find("path").click(function() {
+            $(".info").hide();
+            $("#" + $(this).attr("id") + "_info").show();
+        });
+    });
+    </script>
+    <br>
+    <div id="">
+        Legende: 
+    <span class="bad">■ kein IFG</span>&nbsp;
+    <span class="soso">■ mittleres IFG</span>&nbsp;
+    <span class="good">■ tolles IFG</span>
+</div>
+</div>
+
+</body>
+</html>

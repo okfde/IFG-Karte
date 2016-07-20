@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+    #legende {
+        margin-top:10px;
+        margin-left:460px;
+    }
+    .info {
+        display: none
+    }
+    .info_container {
+        width: 400px;
+        padding: 1px;
+        float: left;
+    }
+    .good {
+        color: #00aa00;
+    }
+    .soso {
+        color: #A7A72D;
+    }
+    .bad {
+        color: #880000;
+    }
+    </style>
+    <title>Informationsfreiheit in Deutschland</title>
+</head>
+<body>
+    <h1>Informationsfreiheit in Deutschland</h1>
+    <div class="col-md-4">
+		<div class="info" id="Baden_Württemberg_info">
+            <h2>Baden Württemberg</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Maximale Kosten: Es gibt keine Maximalgebühr for Anfragen. Anders als in anderen Bundesländern können Gebühren hier kostendeckend berechnet werden, was theoretisch zu Gebühren in Höhe von tausenden Euro für einzelne Anfragen führen kann</li>
+					<li class="bad">Baden-Württemberg hat bisher keine Gebührenordnung für IFG-Anfragen</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Berlin_info">
+            <h2>Berlin</h2>
+				<ul>
+					<li class="bad">Selbst einfache Anfragen kosten mindestens fünf Euro</li>
+					<li class="good">Für als gemeinnützig anerkannte Organisationen entfallen Kosten</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 500 Euro</li>
+					<li><a href="http://www.datenschutz-berlin.de/attachments/635/IFG_GebO.pdf">Zur Berliner Gebührenordnung</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Brandenburg_info">
+            <h2>Brandenburg</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 500 Euro</li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/media.php/4055/AIG-2010.pdf">Zur Brandenburgischen Gebührenordnung</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Bremen_info">
+            <h2>Bremen</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 500 Euro</li>
+					<li><a href="http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen2014_tp.c.67770.de&asl=bremen203_tpgesetz.c.55340.de&template=20_gp_ifg_meta_detail_d">Zur Bremer Gebührenordnung</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Hamburg_info">
+            <h2>Hamburg</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="good">Sozialklausel: Gebührenbefreiung u.a. für EmpfängerInnen von ALGII und Sozialgeld</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 500 Euro</li>
+					<li><a href="https://www.datenschutz-hamburg.de/uploads/media/Gebuehrenordnung_Transparenzgesetz_HmbTGGebO.pdf">Zur Hamburgischen Gebührenordnung</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Mecklenburg-Vorpommern_info">
+            <h2>Mecklenburg-Vorpommern</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 500 Euro</li>
+					<li><a href="http://www.landesrecht-mv.de/jportal/portal/page/bsmvprod.psml?showdoccase=1&st=lr&doc.id=jlr-InfFrGKostVMV2008rahmen&doc.part=X&doc.origin=bs">Zur Gebührenordnung des Landes</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Nordrhein-Westfalen_info">
+            <h2>Nordrhein-Westfalen</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="good">In Einzelfällen Gebührenermäßigung oder -befreiung möglich</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 1000 Euro</li>
+					<li><a href="https://recht.nrw.de/lmi/owa/br_text_anzeigen?v_id=1120070810130547111">Zur Gebührenordnung des Landes</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Rheinland-Pfalz_info">
+            <h2>Rheinland-Pfalz</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Maximale Kosten pro Anfrage: Derzeit nicht klar, da es noch keine Gebührenordnung zum kürzlich erlassenen Transparenzgesetz gibt</li>
+					<li><a href="http://landesrecht.rlp.de/jportal/portal/t/1mr3/page/bsrlpprod.psml;jsessionid=4F69925073B14087A4C1F5278A70F354.jp34?pid=Dokumentanzeige&showdoccase=1&js_peid=Trefferliste&documentnumber=1&numberofresults=8&fromdoctodoc=yes&doc.id=jlr-AllgGebVerzVRP2007rahmen%3Ajuris-lr00&doc.part=X&doc.price=0.0&doc.hl=1#focuspoint">Zur Gebührenordnung des Landes</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Saarland_info">
+            <h2>Saarland</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 500 Euro</li>
+					<li><a href="http://www.datenschutz.saarland.de/images/stories/pdf/Informationsfreiheit/ifg-gebuehren.pdf">Zur Gebührenordnung des Landes</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Sachsen-Anhalt_info">
+            <h2>Sachsen-Anhalt</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Es können auch für Ablehnungsbescheide Gebühren verlangt werden</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 2000 Euro</li>
+					<li><a href="http://www.informationsfreiheit.sachsen-anhalt.de/fileadmin/Bibliothek/Landesaemter/LfD/PDF/binary/Informationsfreiheit/Vorschriften/Land/IZG_LSA_KostVO.pdf">Zur Gebührenordnung des Landes</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Schleswig-Holstein_info">
+            <h2>Schleswig-Holstein</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Maximale Kosten pro Anfrage: 500 Euro</li>
+					<li><a href="http://www.schleswig-holstein.de/MELUR/DE/Allgemeines/08_IZG/PDF/IZG_SH_KostenVO__blob=publicationFile.pdf">Zur Gebührenordnung des Landes</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Thueringen_info">
+			<h2>Thüringen</h2>
+				<ul>
+					<li class="good">Einfache Anfragen sind kostenfrei</li>
+					<li class="bad">Kosten werden <b>ohne Begrenzung</b> nach Zeitaufwand bemessen</li>
+					<li><a href="http://landesrecht.thueringen.de/jportal/?quelle=jlink&query=VwKostO+TH&psml=bsthueprod.psml&max=true&aiz=true#jlr-VwKostOTHV5Anlage%20jlr-VwKostOTHV4Anlage">Zur Gebührenordnung des Landes</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Sachsen_info">
+            <h2>Sachsen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+				</ul>
+        </div>
+        <div class="info" id="Niedersachsen_info">
+            <h2>Niedersachsen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+				</ul>
+        </div>
+        <div class="info" id="Hessen_info">
+            <h2>Hessen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+				</ul>
+        </div>
+        <div class="info" id="Bayern_info">
+            <h2>Bayern</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+				</ul>
+        </div>
+    </div>
+<div class="col-md-6">
+    <ul class="nav nav-tabs">
+      <li><a href="karte1.html">Überblick</a></li>
+      <li class="active"><a href="karte2.html">Gebühren</a></li>
+      <li><a href="karte3.html">Bereichsausnahmen</a></li>
+</ul>
+<br>
+    <object data="karte2.svg"></object> 
+    <script>
+    $(window).load(function() {
+        var svg = $("object").get(0).contentDocument;
+        $(svg).find("path").click(function() {
+            $(".info").hide();
+            $("#" + $(this).attr("id") + "_info").show();
+        });
+    });
+    </script>
+    <br>
+    <div id="">
+        Legende: 
+    <span class="bad">■ kein IFG</span>&nbsp;
+    <span class="soso">■ hohe Gebühren</span>&nbsp;
+    <span class="good">■ eher niedrige Gebühren</span>
+</div>
+</div>
+
+</body>
+</html>
