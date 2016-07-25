@@ -54,6 +54,7 @@
         #Hessen {
            fill: #FE2E2E;
         }
+		path:hover { stroke-width: 2px; }
         ]]></style><path
        id="Thueringen"
        fill="#B1D1A3"

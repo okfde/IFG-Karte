@@ -47,7 +47,7 @@
        type="text/css"
        id="style5"><![CDATA[
         #Sachsen-Anhalt, #Berlin  {
-           fill: #00cc00;
+           fill: #00cc00;			
         }
         #Bremen, #Thueringen, #Saarland  {
            fill: #FFFF00;
@@ -55,6 +55,7 @@
         #Hessen {
            fill: #FE2E2E;
         }
+		path:hover { stroke-width: 2px; }
         ]]></style><path
        id="Thueringen"
        fill="#B1D1A3"
