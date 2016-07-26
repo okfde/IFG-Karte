@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <style>
+    #legende {
+        margin-top:10px;
+        margin-left:460px;
+    }
+    .info {
+        display: none
+    }
+    .info_container {
+        width: 400px;
+        padding: 1px;
+        float: left;
+    }
+    .good {
+        color: #2ca25f;
+    }
+    .soso {
+        color: #99d8c9;
+    }
+    .bad {
+        color: #000000;
+    }
+	.white {
+        color: #e5f5f9;
+    }
+    </style>
+    <title>Derecho de saber en Espana</title>
+</head>
+<body>
+    <h1>Derecho de saber en Espana</h1>
+    <div class="col-md-4">
+	click, click<br>
+        <div class="info" id="madrid_info">
+            <h2>Madrid</h2>
+				espanol, espanol
+        </div>
+        <div class="info" id="Berlin_info">
+            <h2>Berlin</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 158</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 474</li>
+					<li>Davon ganz oder teilweise erfolgreich: 25 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 19</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/berlin/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.275104.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://gesetze.berlin.de/jportal/?quelle=jlink&query=InfFrG+BE&psml=bsbeprod.psml&max=true&aiz=true" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Brandenburg_info">
+            <h2>Brandenburg</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 70</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 786</li>
+					<li>Davon ganz oder teilweise erfolgreich: 29 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 73</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/brandenburg/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.217613.de&rechtsgrundlage_db_title[]=bb1.c.294717.de" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://www.bravors.brandenburg.de/sixcms/detail.php?gsid=land_bb_bravors_01.c.47172.de" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Bremen_info">
+            <h2>Bremen</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 57</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 91</li>
+					<li>Davon ganz oder teilweise erfolgreich: 21 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 0</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/bremen/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.275105.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://transparenz.bremen.de/sixcms/detail.php?gsid=bremen2014_tp.c.67770.de&asl=bremen203_tpgesetz.c.55340.de&template=20_gp_ifg_meta_detail_d" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Hamburg_info">
+            <h2>Hamburg</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 199</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 786</li>
+					<li>Davon ganz oder teilweise erfolgreich: 48 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 33</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/hamburg/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.316233.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://transparenz.hamburg.de/das-hmbtg/" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Mecklenburg-Vorpommern_info">
+            <h2>Mecklenburg-Vorpommern</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 36</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 112</li>
+					<li>Davon ganz oder teilweise erfolgreich: 38 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 6</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/mecklenburg-vorpommern/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.275107.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://www.landesrecht-mv.de/jportal/portal/page/bsmvprod.psml?showdoccase=1&doc.id=jlr-InfFrGMVrahmen&doc.part=X&doc.origin=bs&st=lr" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Nordrhein-Westfalen_info">
+            <h2>Nordrhein-Westfalen</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 341</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 1157</li>
+					<li>Davon ganz oder teilweise erfolgreich: 49 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 44</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/nrw/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.254176.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="https://recht.nrw.de/lmi/owa/pl_text_anzeigen?v_id=4820020930120743668" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Rheinland-Pfalz_info">
+            <h2>Rheinland-Pfalz</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 268</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 533</li>
+					<li>Davon ganz oder teilweise erfolgreich: 49 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 25</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/rheinland-pfalz/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.451717.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://www.landesrecht.rlp.de/jportal/portal/t/12t2/page/bsrlpprod.psml;jsessionid=82D0C042758D81F209B48EA1345376C4.jp10?pid=Dokumentanzeige&showdoccase=1&js_peid=Trefferliste&documentnumber=3&numberofresults=8&fromdoctodoc=yes&doc.id=jlr-TranspGRPrahmen&" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Saarland_info">
+            <h2>Saarland</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 51</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 97</li>
+					<li>Davon ganz oder teilweise erfolgreich: 29 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 5</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/saarland/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.285910.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://sl.juris.de/cgi-bin/landesrecht.py?d=http://sl.juris.de/sl/gesamt/SIFG_SL_2006.htm#SIFG_SL_2006_rahmen" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Sachsen-Anhalt_info">
+            <h2>Sachsen-Anhalt</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 35</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 52</li>
+					<li>Davon ganz oder teilweise erfolgreich: 42 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 2</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/sachsen-anhalt/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.217612.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://www.landesrecht.sachsen-anhalt.de/jportal/?quelle=jlink&query=InfZG+ST&psml=bssahprod.psml&max=true&aiz=true" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Schleswig-Holstein_info">
+            <h2>Schleswig-Holstein</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 95</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 145</li>
+					<li>Davon ganz oder teilweise erfolgreich: 50 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 4</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/schleswig-holstein/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.275109.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://www.gesetze-rechtsprechung.sh.juris.de/jportal/?quelle=jlink&query=InfoZG+SH&psml=bsshoprod.psml&max=true" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Thueringen_info">
+			<h2>Thüringen</h2>
+				<ul>
+					<li>Offizielle Anfragestatistik: Keine</li>
+					<li>Anfragen an Behörden im Land 2015 über FragDenStaat: 49</li>
+					<li>Anfragen an Behörden im Land gesamt über FragDenStaat (Stand: 26.07.2016): 78</li>
+					<li>Davon ganz oder teilweise erfolgreich: 42 %</li>
+					<li>Abgeschlossene Vermittlungen durch Datenschutzbeauftragte: 3</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/thueringen/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+					<li><a href="http://www.lda.brandenburg.de/sixcms/detail.php?template=rechtsprechungsdb_erg_d&sort=datum&order=desc&gerichte_title=&title=&sm[title]=tablescan&datum_von=&datum_bis=&art2_title=&vt_db=&sm[vt_db]=fulltext_all&rechtsgrundlage_db_title[]=bb1.c.286721.de&max=" target="_blank">Zu Rechtsprechung zur Informationsfreiheit im Land</a></li>
+					<li><a href="http://landesrecht.thueringen.de/jportal/?quelle=jlink&query=InfFrG+TH&psml=bsthueprod.psml&max=true" target="_blank">Zum Text des Informationsfreiheitsgesetzes im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Sachsen_info">
+            <h2>Sachsen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/sachsen/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Niedersachsen_info">
+            <h2>Niedersachsen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/niedersachsen/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Hessen_info">
+            <h2>Hessen</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/hessen/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+				</ul>
+        </div>
+        <div class="info" id="Bayern_info">
+            <h2>Bayern</h2>
+				<ul>
+					<li>hat kein Informationsfreiheitsgesetz</li>
+					<br>
+					<li><a href="https://fragdenstaat.de/anfragen/bayern/" target="_blank">Zu allen Anfragen an Behörden im Land</a></li>
+				</ul>
+        </div>
+		<div class="general">
+		
+		</div>
+    </div>
+<div class="col-md-6">
+    <ul class="nav nav-tabs">
+      <li><a href="karte1.html">Überblick</a></li>
+      <li><a href="karte2.html">Gebühren</a></li>
+      <li><a href="karte3.html">Bereichsausnahmen</a></li>
+      <li class="active"><a href="karte4.html">Statistik</a></li>
+</ul>
+<br>
+    <object data="espana.svg"></object> 
+    <script>
+    $(window).load(function() {
+        var svg = $("object").get(0).contentDocument;
+        $(svg).find("path").click(function() {
+            $(".info").hide();
+            $("#" + $(this).attr("id") + "_info").show();
+        });
+    });
+    </script>
+    <br>
+    <div id="">
+        Legende: 
+    <span class="white">■ </span>no&nbsp;
+    <span class="soso">■ no bueno</span>&nbsp;
+    <span class="good">■ bueno</span>
+</div>
+</div>
+
+</body>
+</html>
